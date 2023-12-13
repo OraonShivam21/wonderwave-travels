@@ -1,14 +1,14 @@
 /* import this css files to other css files to use the default variables set to be used to make the pages uniform */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap");
 
 :root {
-    --burgundy-theme: #4B4491;
-    --blue-theme: #4A71E8;
-    --blood-red-theme: #BE4360;
-    --light-pink-theme: #F37ABF;
-    --orange-theme: #FF945D;
-    --yellow-green-theme: #F5E577;
-    --primary-font: 'Roboto', sans-serif;
-    --secondary-font: 'Poppins', sans-serif;
+  --burgundy-theme: #4b4491;
+  --blue-theme: #4a71e8;
+  --blood-red-theme: #be4360;
+  --light-pink-theme: #f37abf;
+  --orange-theme: #ff945d;
+  --yellow-green-theme: #f5e577;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
 }
