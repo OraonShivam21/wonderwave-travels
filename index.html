@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Styles for card container */
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+    background: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Styles for pagination */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+.pagination-button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for card components */
+.card-image {
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-description,
+.card-duration,
+.card-destination {
+    margin-bottom: 8px;
+}
+
+.card-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <div id="card-container"></div>
+    <div id="pagination"></div>
+    <script src="script.js"></script>
+</body>
+</html>
