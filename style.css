@@ -1,0 +1,46 @@
+nav {
+    background-color: #4465dd;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 50px;
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Keeps the aspect ratio of the logo */
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left:500px;
+  }
+
+  .links a {
+    margin: 0 50px; /* Adjust the margin as needed */
+  }
+
+  .sec-1 {
+    display: flex;
+  }
+
+  .sec-1:nth-child(1){
+    border: 1px solid;
+  }
+
+  .sec-1:nth-child(2){
+    border: 1px solid;
+  }
