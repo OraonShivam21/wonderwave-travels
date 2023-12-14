@@ -63,6 +63,9 @@ body {
   position: absolute;
   left: 24rem;
   top: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .admin-greeting h3 {
@@ -75,6 +78,12 @@ body {
   font-family: var(--secondary-font);
   margin: 10px 0;
   opacity: 0.8;
+}
+
+.admin-greeting img {
+    margin-top: -2.8rem;
+    margin-right: 2rem;
+    width: 18%;
 }
 
 /* start of package form styling */
@@ -107,7 +116,7 @@ form {
     flex-direction: column;
 }
 
-form > label {
+form label {
     font-family: var(--secondary-font);
     font-size: .9rem;
     margin: 1rem 0 .5rem;
@@ -129,4 +138,20 @@ form > p {
     font-family: var(--secondary-font);
     font-size: .7rem;
     margin: 0 .6rem 0;
+}
+
+.package-activities > input {
+    margin-left: 2rem;
+}
+
+#package-submit {
+    background-color: var(--blue-theme);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    margin: 2rem 0;
+    padding: 10px;
+    width: 14rem;
 }
