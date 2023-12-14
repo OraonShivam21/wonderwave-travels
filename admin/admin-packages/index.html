@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=DIV, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      /* Styles for pagination */
+      #pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .pagination-button {
+        background-color: #4caf50;
+        color: white;
+        border: 1px solid #4caf50;
+        padding: 10px 15px;
+        cursor: pointer;
+        margin: 0 5px;
+        border-radius: 4px;
+      }
+
+      .pagination-button:hover {
+        background-color: #45a049;
+      }
+
+      /* Styles for card components */
+      .card-image {
+        overflow: hidden;
+      }
+
+      .card-image img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .card-body {
+        padding: 15px;
+      }
+
+      .card-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .card-description,
+      .card-duration,
+      .card-destination {
+        margin-bottom: 8px;
+      }
+
+      .card-price {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="searchInput">Search by Destination:</label>
+      <input type="text" id="search-input" placeholder="Enter destination..." />
+      <button onclick="performSearch()" id="search-button">Search</button>
+    </div>
+
+    <button id="sort-low-to-high">LOW-TO-HIGH</button>
+
+    <button id="sort-high-to-low">HIGH-TO-LOW</button>
+
+    <div id="card-container"></div>
+    <div id="pagination"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

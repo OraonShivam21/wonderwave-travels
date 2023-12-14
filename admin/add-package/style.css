@@ -52,9 +52,14 @@ body {
   width: 100%;
 }
 
+.navigation a:hover {
+    background-color: var(--blue-theme);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
 .active {
-  background-color: var(--blue-theme);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: var(--blue-theme);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* admin greeting styling */
@@ -88,7 +93,7 @@ body {
 
 /* start of package form styling */
 
-.package-form {
+.package-form-class {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   position: absolute;
@@ -97,16 +102,15 @@ body {
   padding: 2rem;
   height: 81rem;
   width: 59rem;
-  z-index: -1;
 }
 
-.package-form h1 {
+.package-form-class h1 {
     font-family: var(--primary-font);
     font-size: 2.4rem;
     opacity: .8;
 }
 
-.package-form > p {
+.package-form-class > p {
     font-family: var(--secondary-font);
     margin: .6rem 0 1rem;
 }
@@ -147,6 +151,7 @@ form > p {
 #package-submit {
     background-color: var(--blue-theme);
     color: rgb(255, 255, 255);
+    cursor: pointer;
     border: none;
     border-radius: 6px;
     font-family: var(--secondary-font);
@@ -154,4 +159,9 @@ form > p {
     margin: 2rem 0;
     padding: 10px;
     width: 14rem;
+}
+
+#package-submit:hover {
+    background-color: var(--blue-theme);
+    opacity: .7;
 }
