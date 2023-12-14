@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=DIV, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -27,12 +31,134 @@
 
     <!-- NAV BAR END -->
 
-    <div>
-      <div>
+    <!-- SEC-1 START -->
+    <div class="sec-1">
+      <div class="sec-1-content">
         <h1>SUMMER TRIP!</h1>
-        <p>Every Sunday is a</p>
+        <p>
+          Every Sunday is a service for booking hotels, air tickets and other
+          travel services for professionals
+        </p>
+        <div>
+          <input type="text" />
+          <button>Search</button>
+        </div>
       </div>
-      <div></div>
+      <div>
+        <div class="sec-1-img">
+          <div class="img-box">
+            <img
+              style="height: 400px; width: 500px; border-radius: 20px"
+              src="images/photo-1529074963764-98f45c47344b.avif"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- SEC-1 END -->
+
+    <!-- SEC-2 START -->
+    <div class="sec-2">
+      <div class="sec2card-container">
+        <div class="sec2card">
+          <img
+            src="images/feet-arrows-on-road-background-600nw-1469142113.webp"
+            alt="choice"
+          />
+          <h2>Lot of Choices</h2>
+          <p>Amazing places? We will give you the best choice!</p>
+        </div>
+
+        <div class="sec2card">
+          <img src="images/Blog-Photos-26.webp" alt="easy booking" />
+          <h2>Easy Booking</h2>
+          <p>Payment is simple, and you'll get your quickly!</p>
+        </div>
+
+        <div class="sec2card">
+          <img
+            src="images/world-s-best-tour-guide-button-107104665.jpg"
+            alt="tour guide"
+          />
+          <h2>Best to Guide</h2>
+          <p>Our guide team will make your trip as comfortable as possible!</p>
+        </div>
+      </div>
+
+      <div class="sec-2content">
+        <div>01</div>
+        <h2>OUR SERVICES</h2>
+        <p>
+          Every Sunday is a service for booking hotels, air tickets and other
+          travel services for professional
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+    <!-- Sec-2 END -->
+
+    <!-- SEC-3 START -->
+    <div class="sec-3">
+      <div class="sec-3-content">
+        <div class="seq">02</div>
+        <h2>SPECIAL PACKAGE</h2>
+
+        <p>
+          Every Sunday is a service for booking hotels, air tickets and other
+          travel services for professional
+        </p>
+        <button>Learn More</button>
+        <br /><br /><br />
+        <div class="butt">
+          <button class="nav-button" onclick="showPreviousCard()">
+            <span class="material-symbols-outlined"> arrow_back </span>
+          </button>
+          <button class="next-button" onclick="showNextCard()">
+            <span class="material-symbols-outlined"> arrow_forward </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="sec3card-container" id="card-container">
+        <div class="sec3card">
+          <!-- Card 1 -->
+          <h2>Card 1</h2>
+          <button>
+            <span class="material-symbols-outlined"> star </span>
+            <span>4.7</span>
+          </button>
+          <div class="card-content">
+            <div>
+              <h2>The Grand Canal</h2>
+              <p>Venice, Northeastern Italy</p>
+            </div>
+            <div>
+              <button class="card-butt">
+                Book Now
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec3card" style="display: none">
+          <!-- Card 2 -->
+          <h2>Card 2</h2>
+          <p>Card content goes here.</p>
+        </div>
+
+        <div class="sec3card" style="display: none">
+          <!-- Card 3 -->
+          <h2>Card 3</h2>
+          <p>Card content goes here.</p>
+        </div>
+      </div>
+    </div>
+    <!-- SEC-3 END -->
+
+    <script src="index.js"></script>
   </body>
 </html>
