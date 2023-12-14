@@ -1,0 +1,82 @@
+/* Import fonts and define color variables based on the provided design */
+@import url("https://fonts.googleapis.com/css2?family=Your+Font+Here&display=swap");
+
+:root {
+  --primary-color: #...; /* Primary color from design */
+  --secondary-color: #...; /* Secondary color from design */
+  /* Additional color variables as needed */
+}
+
+/* Apply global styles and styles for specific elements like headers, cards, etc. */
+body {
+  font-family: "Your Font Here", sans-serif;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+/* Style for the package cards */
+.package-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.package-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.package-content {
+  padding: 20px;
+}
+
+.package-title {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.package-description {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.package-price {
+  font-size: 1.2em;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.package-info {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.package-activities {
+  margin-top: 15px;
+}
+
+.package-activity {
+  background: var(--secondary-color);
+  color: #fff;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
