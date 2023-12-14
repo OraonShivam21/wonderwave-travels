@@ -8,8 +8,9 @@ nav {
 
   .logo {
     margin-left: 50px;
-    height: 50px; /* Adjust the height as needed */
-    width: auto; /* Keeps the aspect ratio of the logo */
+    height: 50px; 
+    width: auto; 
+    border-radius: 50%;
   }
 
   nav a {
@@ -30,17 +31,257 @@ nav {
   }
 
   .links a {
-    margin: 0 50px; /* Adjust the margin as needed */
+    margin: 0 50px; 
   }
+
+   /* NAV BAR END  */
 
   .sec-1 {
     display: flex;
+    border: 2px solid;
+    height: 500px;
+    background-color: #4465dd;
   }
 
-  .sec-1:nth-child(1){
+  .sec-1-img {
     border: 1px solid;
+    margin-left: 200px;
   }
 
-  .sec-1:nth-child(2){
-    border: 1px solid;
+  .img-box {
+    height: 400px;
+    border: 2px solid;
+    width: 500px solid;
+    margin-top: 50px;
+    border-radius: 20px;
+  }
+
+  .sec-1-content {
+    margin-left: 100px;
+    width: 500px;
+  }
+
+  .sec-1-content>h1{
+    font-size: 80px;
+  }
+
+
+  .sec-1-content>div{
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+  }
+
+  .sec-1-content>div>input{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 20px;
+    border: none;
+  }
+
+  .sec-1-content>div>button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: #fe8c56;
+    color: white;
+  }
+
+  /* SEC-1 END */
+
+  .sec-2 {
+    display: flex;
+    background-color: #193282;
+    justify-content: space-between;
+    align-items: flex-start; /* Adjusted to align items at the start of the flex container */
+    padding: 50px;
+  }
+
+  .sec2card-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .sec2card {
+    flex: 1; /* Adjusted to make the cards take equal width */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    height: 250px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .sec2card>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .sec2card:hover {
+    transform: scale(1.12);
+  }
+
+  .sec-2content {
+    margin-left: 30px;
+    margin-top: -20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    color: white;
+    }
+
+  .sec-2content>div{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec-2content>h2{
+    font-size: 30px;
+    color: white;
+  }
+
+  .sec-2content>button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#fe8c56  ;
+    color: white;
+  }
+  
+  /* Sec-3 start */
+  
+  .sec-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    background-color: #193282;
+  }
+
+  .sec3card-container {
+    display: flex;
+    overflow: hidden; /* Hide the overflow to show only one card at a time */
+  }
+
+  .sec3card {
+    flex: 0 0 auto; /* Make cards non-flexible */
+    width: 500px; /* Adjust the width as needed */
+    height: 300px;
+    margin-left: 100px;
+    margin-right: 20px; /* Adjust the margin as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  .sec3card>button{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    margin-left: 400px;
+    margin-top: -20px;
+    height: 40px;
+    background-color: #;
+  }
+
+  .sec3card-container:hover {
+    transform: scale(1.12);
+  }
+
+  .sec-3-content {
+    align-items: center;
+    margin-top: 30px;
+    width: 400px;
+    margin-left: 100px;
+  }
+
+  .next-button:hover{
+    transform: scale(1.12);
+  }
+
+  .next-button {
+    margin-left: 20px;
+    cursor: pointer;
+    margin-left: 50px;
+    border-radius: 20px;
+    background-color: #fe8c56;
+    width: 100px;
+  }
+
+  .nav-button {
+    margin: 0 10px;
+    cursor: pointer;
+    margin-left: 100px;
+    border-radius: 20px;
+    background-color: #fe8c56;
+    width: 100px;
+  }
+
+  .nav-button:hover{
+    transform: scale(1.12);
+  }
+
+  .seq{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .butt{
+    display: flex;
+  }
+
+  .sec-3-content>h2{
+    font-size: 30px;
+    color: white;
+  }
+
+  .sec-3-content>button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#fe8c56  ;
+    color: white;
+  }
+
+  .card-content{
+    display: flex;
+    margin-top: 120px;
+  }
+
+  .card-butt{
+    margin-left: 150px;
+    margin-top: 30px;
+    border-radius: 20px;
+    width: 120px;
+    background-color: #fe8c56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+
+  .empty {
+    width: 100%;
+    height: 300px;
   }
