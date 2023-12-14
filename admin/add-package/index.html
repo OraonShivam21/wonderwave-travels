@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <!-- dashboard navigation -->
+    <div class="dashboard-navigation">
+      <div class="heading-logo">
+        <img
+          src="../../images/wonderwave-logo-no-background-dashboard.png"
+          alt="wonderwave-logo"
+        />
+      </div>
+      <hr />
+      <div id="navigation" class="navigation">
+        <a href="#Dashboard"
+          ><span class="material-symbols-outlined"> dashboard </span
+          >Dashboard</a
+        >
+        <a href="#Packages"
+          ><span class="material-symbols-outlined"> receipt_long </span
+          >Packages</a
+        >
+        <a class="active" href="#Add-Package"
+          ><span class="material-symbols-outlined"> package </span>Add
+          Package</a
+        >
+        <a href="#Sign-Out"
+          ><span class="material-symbols-outlined"> logout </span>Log Out</a
+        >
+      </div>
+    </div>
+    <!-- end of dashboard navigation -->
+
+    <!-- admin greeting -->
+    <div class="admin-greeting">
+      <div>
+        <h3>Hello, Admin</h3>
+        <p>
+          Here's your field to add new packages for WonderWave Travel Service
+        </p>
+      </div>
+      <img
+        src="../../images/wonderwave-travels-logo-no-background.png"
+        alt="logo"
+      />
+    </div>
+
+    <!-- input form for creating new packages -->
+    <div class="package-form-class">
+      <h1>Add a new package</h1>
+      <p>These are the fields to add a new touring package</p>
+      <form id="package-form">
+        <label for="package-title">Title of package:</label>
+        <input
+          type="text"
+          name="package-title"
+          id="package-title"
+          placeholder="Enter an exciting title..."
+          required
+        />
+        <p>
+          Give a catching title here, for eg. Roopkund Lake - The mysterious
+          lake of Skeleton
+        </p>
+
+        <label for="package-description">Description of package:</label>
+        <textarea
+          name="package-description"
+          id="package-description"
+          cols="30"
+          rows="5"
+          placeholder="Give your package a thrilling description..."
+          required
+        ></textarea>
+        <p>
+          Give a brief description about the package or the location of the
+          package
+        </p>
+
+        <label for="package-destination">Destination of package:</label>
+        <input
+          type="text"
+          name="package-destination"
+          id="package-destination"
+          placeholder="Enter the destination location..."
+          required
+        />
+
+        <label for="package-duration">Duration of package:</label>
+        <input
+          type="number"
+          name="package-duration"
+          id="package-duration"
+          placeholder="Enter the duration in days..."
+          required
+        />
+
+        <label for="package-price">Total package cost:</label>
+        <input
+          type="number"
+          name="package-price"
+          id="package-price"
+          placeholder="Enter the price here..."
+          required
+        />
+
+        <label for="package-currency"
+          >Select the currency for cost of package:</label
+        >
+        <select name="package-currency" id="package-currency" required>
+          <option value="" selected>Select from options</option>
+          <option value="INR">Indian Rupees (&#8377;)</option>
+          <option value="USD">US Dollars (&#36;)</option>
+        </select>
+
+        <label for="package-accomodation">Accomodation in package:</label>
+        <input
+          type="text"
+          name="package-accomodation"
+          id="package-accomodation"
+          placeholder="Enter the available accomodation..."
+          required
+        />
+        <p>
+          Give a short note of accomodation available for this package, eg.
+          &quot;4-star hotels with modern amenities&quot;
+        </p>
+
+        <label for="package-transportation"
+          >Transportation during tour package:</label
+        >
+        <input
+          type="text"
+          name="package-transportation"
+          id="package-transportation"
+          placeholder="Enter the transportation during tour..."
+          required
+        />
+        <p>
+          Give a short note of transportation during tour, eg. &quot;Private
+          air-conditioned vehicles&quot;
+        </p>
+
+        <label for="package-meal">Meals available during package tour:</label>
+        <input
+          type="text"
+          name="package-meal"
+          id="package-meal"
+          placeholder="Enter a brief note on meals available..."
+          required
+        />
+
+        <label>Select the activities provided during package tour:</label>
+        <div class="package-activities">
+          <input
+            type="checkbox"
+            class="package-activities-checkbox"
+            name="guided-city-tour"
+            id="guided-city-tour"
+            value="Guided city tour"
+          />
+          <label for="guided-city-tour">Guided City Tour</label>
+          <input
+            type="checkbox"
+            class="package-activities-checkbox"
+            name="excursion"
+            id="excursion"
+            value="Snorkeling excursion"
+          />
+          <label for="excursion">Snorkeling Excursion</label>
+          <input
+            type="checkbox"
+            class="package-activities-checkbox"
+            name="cultural-shows"
+            id="cultural-shows"
+            value="Cultural shows"
+          />
+          <label for="cultural-shows">Cultural Shows</label>
+        </div>
+
+        <label for="package-image"
+          >Provide any image link for the package:</label
+        >
+        <input
+          type="text"
+          name="package-image"
+          id="package-image"
+          placeholder="Enter your image url here..."
+          required
+        />
+
+        <button id="package-submit" type="submit">Submit Package</button>
+      </form>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

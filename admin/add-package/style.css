@@ -1,0 +1,167 @@
+@import "../../variables.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(222, 222, 255);
+  position: relative;
+  height: 95rem;
+}
+
+/* dashboard-navigation styling */
+
+.dashboard-navigation {
+  position: fixed;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  margin: 1rem;
+  background-color: #26234b;
+  border-radius: 1rem;
+  width: 20rem;
+}
+
+.heading-logo {
+  text-align: center;
+}
+
+.heading-logo img {
+  width: 90%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem 3rem;
+}
+
+.navigation a {
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+  padding: 12px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.navigation a:hover {
+    background-color: var(--blue-theme);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.active {
+    background-color: var(--blue-theme);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* admin greeting styling */
+
+.admin-greeting {
+  position: absolute;
+  left: 24rem;
+  top: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.admin-greeting h3 {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.admin-greeting p {
+  font-family: var(--secondary-font);
+  margin: 10px 0;
+  opacity: 0.8;
+}
+
+.admin-greeting img {
+    margin-top: -2.8rem;
+    margin-right: 2rem;
+    width: 18%;
+}
+
+/* start of package form styling */
+
+.package-form-class {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  position: absolute;
+  left: 23.5rem;
+  top: 8rem;
+  padding: 2rem;
+  height: 81rem;
+  width: 59rem;
+}
+
+.package-form-class h1 {
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    opacity: .8;
+}
+
+.package-form-class > p {
+    font-family: var(--secondary-font);
+    margin: .6rem 0 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-family: var(--secondary-font);
+    font-size: .9rem;
+    margin: 1rem 0 .5rem;
+}
+
+form > input,
+form > select,
+form > textarea {
+    border: 1px solid var(--blue-theme);
+    border-radius: 8px;
+    font-family: var(--secondary-font);
+    font-size: .8rem;
+    resize: none;
+    padding: 10px;
+    width: 80%;
+}
+
+form > p {
+    font-family: var(--secondary-font);
+    font-size: .7rem;
+    margin: 0 .6rem 0;
+}
+
+.package-activities > input {
+    margin-left: 2rem;
+}
+
+#package-submit {
+    background-color: var(--blue-theme);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    margin: 2rem 0;
+    padding: 10px;
+    width: 14rem;
+}
+
+#package-submit:hover {
+    background-color: var(--blue-theme);
+    opacity: .7;
+}
