@@ -26,7 +26,7 @@ div{
 /* left side */
 .portrait{ 
 
-    width: 25%;
+    width: 23.5%;
     height: 100%;
     background-color: black;
     background-image: url('side.jpg');
@@ -45,13 +45,6 @@ div{
 }
 
 
-/* right side */
-.profile{
-    width: 20%;
-    height: 100%;
-    background-color: paleturquoise;
-}
-
 
 /* search */
 .search-container {
@@ -60,7 +53,7 @@ div{
 }
 
 #search-input {
-    width: 57%;
+    width: 58%;
     padding: 8px;
     margin-right: 8px;
     box-sizing: border-box;
@@ -209,4 +202,31 @@ button:hover {
     margin-top: 10px;
 }
 
+/* right side */
+.profile{
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+}
 
+/* profile card */
+.profile-card{
+    height: 290px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.profile-image img {
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 80px;
+}
+
+.profile-body{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
