@@ -196,7 +196,7 @@ nav {
     margin-left: 400px;
     margin-top: -20px;
     height: 40px;
-    background-color: #;
+    background-color: #7591fa;
   }
 
   .sec3card-container:hover {
@@ -284,4 +284,259 @@ nav {
   .empty {
     width: 100%;
     height: 300px;
+  }
+
+  .empty{
+    height: 300px;
+    width: 100%;
+    background-color: #193282;
+    border-bottom-left-radius: 40px ;
+    border-bottom-right-radius: 40px;
+  }
+
+  .upper{
+    width: 80%;
+    height: 500px;
+    border: 5px white;
+    background-color: #7591fa;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -250px;
+    border-radius: 30px;
+  }
+
+  .seq3{
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 65px;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+
+  .hotelbutt{
+    height: 50px;
+    margin-left: 130px;
+    width: 100px;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+  }
+
+  .viewallbutt{
+    height: 50px;
+    margin-left: 30px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: #fe8c56;
+    color: white;
+  }
+
+  .upperflex{
+    display: flex;
+  }
+
+  .upperflex>h2{
+    font-size: 60px;
+    color: white;
+  }
+
+  .back{
+    width: 100%;
+    height: 600px;
+    background-color: #f7f5f2;
+  }
+
+  .upper2{
+    border: 2px solid;
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    margin-left: 250px;
+    border-radius: 30px;
+    margin-top: -510px;
+    background-color: white;
+  }
+
+  .upper3{
+    border: 2px solid;
+    width: 580px;
+    height: 450px;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: -480px;
+  }
+
+  .upper2-content{
+    margin-left: 600px;
+    background-color: white;
+  }
+
+  .circleline{
+    border-radius: 50%;
+    border: 2px solid;
+    width: 20px;
+    height: 20px;
+
+  }
+
+  .tick{
+    border-radius: 50%;
+    border: 2px solid;
+    width: 10px;
+    height: 10px;
+    background-color: #193282;
+    margin-left: 4px;
+    margin-top:3px;
+  }
+
+  .flex{
+    display: flex;
+    margin-top: 20px;
+   }
+
+  .write{
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  .upper2-content>h2{
+    font-size: 50px;
+  }
+
+  .upper2-content>p{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .button{
+    margin-top: 30px;
+    width: 90px;
+    height: 30px;
+    border: none;
+    background-color: white;
+  }
+  
+  .button:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+  }
+
+  .sec-5{
+    width: 100%;
+    height: 800px;
+    background-color: #0f1a3c;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px ;
+    border: 3px solid;
+  } 
+
+  .seq4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+
+  .sec5content{
+    display: flex;
+  }
+
+  .sec5content>h2{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 50px;
+    color: white ;
+  }
+
+  .sec5card{
+    display: flex;
+  }
+  
+  .sec5card1{
+    width: 600px;
+    height: 600px;
+    border: 2px solid;
+    margin-left: 100px;
+    border-radius: 30px;
+
+  }
+
+  .sec5card2{
+    width: 600px;
+    height: 700px;
+    border: 2px solid;
+    margin-left: 100px;
+    margin-top: -100px;
+    border-radius: 30px;
+  }
+
+  .sec7{
+    width: 100%;
+    height: 500px;
+    background-color:#0f1a3c ;
+    margin-top: -25px;
+  }
+
+  .sec7content{
+    width: 500px;
+    border: 2px solid;
+    margin-left: 450px;
+    color: white;
+    text-align: center;
+  }
+
+  .search{
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 500px;
+  }
+  
+  .search>input{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 20px;
+    border: none;
+  }
+
+  .search>button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: #fe8c56;
+    color: white;
+  }
+
+  .sec7content>h1{
+    font-size: 50px;
+    margin-top: 100px;
+  }
+
+  
+  
+  hr{
+    color: white;
+    width: 500px;
+  }
+  
+  footer {
+    background-color: #0f1a3c;
+    width: 100%;
+    height: 100px;
   }
