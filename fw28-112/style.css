@@ -166,6 +166,9 @@ button:hover {
     border-radius: 20px;
 }
 
+.card:hover {
+    transform: scale(1.02);
+}
 .card-image img {
     width: 100%;
     height: 200px;
