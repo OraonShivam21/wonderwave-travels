@@ -56,11 +56,14 @@ function getCard(data)
 
     let description=document.createElement('div');
     description.className="card-description";
-    description.textContent=data.description;
+    description.textContent=`${data.description}.`;
+
+    let dura_price=document.createElement('div')
+    dura_price.className="duration-price";
 
     let duration=document.createElement('div');
     duration.className="card-duration";
-    duration.textContent=data.duration;
+    duration.textContent=`duration- ${data.duration} days`;
 
     let destination=document.createElement('div');
     destination.className="card-destination";
@@ -73,8 +76,9 @@ function getCard(data)
     cardbody.append(title);
     cardbody.append(description);
     cardbody.append(destination);
-    cardbody.append(duration);
-    cardbody.append(price);
+    dura_price.append(duration);
+    dura_price.append(price);
+    cardbody.append(dura_price);
     card.append(cardbody);
     return card;
 }
