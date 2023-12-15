@@ -75,7 +75,9 @@ div{
     cursor: pointer;
 }
 
-
+#search-button:hover{
+    transform: scale(1.05);
+}
 /* sorting */
 .sort-container {
     display: flex;
@@ -142,7 +144,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #8179f0;
 }
 
 
@@ -207,6 +209,10 @@ button:hover {
     width: 20%;
     height: 100%;
     padding: 20px;
+    background-color: #f8f2f3;
+    background-image: url('pattern.png');
+    background-size: cover;
+    background-position: center;
 }
 
 /* profile card */
@@ -215,6 +221,7 @@ button:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 20px;
     padding: 20px;
+    background-color: white;
 }
 .profile-image img {
     margin-top: 20px;
@@ -229,4 +236,8 @@ button:hover {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
 }
