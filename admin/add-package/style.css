@@ -97,11 +97,10 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   position: absolute;
-  left: 23.5rem;
+  left: 28%;
+  right: 3.6%;
   top: 8rem;
   padding: 2rem;
-  height: 81rem;
-  width: 59rem;
 }
 
 .package-form-class h1 {
