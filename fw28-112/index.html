@@ -8,11 +8,24 @@
 </head>
 <body>
     <div class="mega-container">
-        <div class="portrait"></div>
+        <div class="add-package-container">
+            <div class="add-packages">
+                <input type="text" id="add-title" class="add-input" placeholder="Enter title...">
+                <input type="text" id="add-description" class="add-input" placeholder="Enter description...">
+                <input type="text" id="add-destination" class="add-input" placeholder="Enter destination...">
+                <input type="text" id="add-duration" class="add-input" placeholder="Enter duration...">
+                <input type="text" id="add-price" class="add-input" placeholder="Enter price...">
+                <input type="text" id="add-currency" class="add-input" placeholder="Enter currency...">
+                <input type="text" id="add-image" class="add-input" placeholder="Enter image url...">
+                <button class="add-button">Save Changes</button>
+            </div>
+           </div>
+
+
         <div class="functionality">
             <div class="search-container">
                     <label for="searchInput"></label>
-                <input type="text" id="search-input" placeholder="Enter destination...">
+                <input type="text" id="search-input" placeholder="Enter destination..." style="border: 2px solid black;">
                 <button onclick="performSearch()" id="search-button">Search</button>
                 <div class="sort-container">
                     <div class="dropdown">

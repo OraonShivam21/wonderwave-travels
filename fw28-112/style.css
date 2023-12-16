@@ -230,6 +230,7 @@ button:hover {
     padding: 20px;
     background-color: white;
     margin-top: 30px;
+    border: 2px solid #28246e;
 }
 .profile-image img {
     margin-top: 20px;
@@ -291,6 +292,7 @@ background-color: red;
     gap: 1%;
     background-color: white;
     margin-top: 50px;
+    border: 2px solid black;
 }
 
 .edit-field:hover {
@@ -322,3 +324,54 @@ background-color: red;
     background-color: red;
   }
 
+
+
+  /* add packages */
+.add-package-container{
+    width: 18%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+ gap: 5%;
+ background-image: url('pattern.png');
+ background-size: cover;
+ background-position: center;
+}
+
+
+.add-packages{
+    background-color: white;
+    height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.add-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+
+  .add-button {
+    width: 50%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+
+  .add-button:hover {
+    background-color: #45a049;
+  }

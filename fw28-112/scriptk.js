@@ -83,7 +83,7 @@ function getCard(data)
     delete_button.textContent="delete";
     delete_button.addEventListener('click',(e)=>{
         e.preventDefault();
-         //deleteCard(data);
+         deleteCard(data);
     })
     let edit_button=document.createElement('button');
     edit_button.className="edit-button";
@@ -171,15 +171,15 @@ document.getElementById('sort-high-to-low').addEventListener('click', function (
 
 //edit card
 
-let editCard=async (data)=>
+let editCard=async (packagedata)=>
 {
     let durations=document.getElementById("edit-duration");
     let prices=document.getElementById("edit-price");
-    durations.value=data.duration;
-    prices.value=data.price;
+    durations.value=packagedata.duration;
+    prices.value=packagedata.price;
     let save=document.querySelector(".save-button");
     save.addEventListener('click',async()=>{
-        let res=await fetch('https://wonderwave-api.onrender.com/packages',{
+        let res=await fetch(`${'https://wonderwave-api.onrender.com/packages'}/${packagedata.id}`,{
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
@@ -197,10 +197,56 @@ let editCard=async (data)=>
 
 // delete card
 
-// let deleteCard=async (data)=>{
-//     let res=await fetc
-// }
+let deleteCard=async (packagedata)=>{
+    let res=await fetch(`${'https://wonderwave-api.onrender.com/packages'}/${packagedata.id}`,{
+        method: 'DELETE'
+    })
+    let data=await res.json();
+    alert('package deleted successfully');
+    fetchdata(`https://wonderwave-api.onrender.com/packages`);
+}
 
+
+
+// add card
+
+let addbtn= document.querySelector('.add-button');
+addbtn.addEventListener('click',()=>{
+    createPackage();
+})
+
+
+let createPackage=async()=>{
+let addtitle=document.getElementById('add-title');
+let adddesc=document.getElementById('add-description');
+let adddest=document.getElementById('add-destination');
+let adddur=document.getElementById('add-duration');
+let addprice=document.getElementById('add-price');
+let addimage=document.getElementById('add-image');
+let addcurr=document.getElementById('add-currency');
+
+
+    let obj={
+        title: addtitle.value,
+        description: adddesc.value,
+        destination: adddest.value,
+        duration: adddur.value,
+        price: addprice.value,
+        image: addimage.value,
+        currency: addcurr.value
+    }
+
+    let res=await fetch(`https://wonderwave-api.onrender.com/packages`,{
+        method: 'POST',
+        headers: {
+            'Content-Type' : "application/json"
+        },
+        body: JSON.stringify(obj)
+    });
+    let data=await res.json();
+    alert('package created');
+    fetchdata(`https://wonderwave-api.onrender.com/packages`);
+}
 
 
 fetchdata(`https://wonderwave-api.onrender.com/packages`);
