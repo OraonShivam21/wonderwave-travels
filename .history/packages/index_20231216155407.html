@@ -142,26 +142,6 @@
             /* matching bright yellow */
             font-size: 1.5em;
         }
-
-        .cart-container {
-            position: relative;
-            cursor: pointer;
-            /* Makes it obvious that it's clickable */
-        }
-
-        #cart-count {
-            position: absolute;
-            top: -10px;
-            /* Adjust as needed */
-            right: -10px;
-            /* Adjust as needed */
-            background-color: red;
-            /* Or any color you prefer */
-            color: white;
-            padding: 2px 5px;
-            font-size: 0.75rem;
-            border-radius: 50%;
-        }
     </style>
 </head>
 
@@ -170,14 +150,8 @@
     <div class="sticky-header">
         <div class="container-boxed d-flex justify-content-between align-items-center">
             <h2>Every Sunday Travel</h2>
-            <div class="cart-container">
-                <a href="/cart"> <i class="fas fa-shopping-cart cart-icon"></i>
-                    <span id="cart-count" class="badge badge-pill badge-danger">0</span></a>
-
-
-
-
-            </div>
+            <i class="fas fa-shopping-cart cart-icon"></i>
+            <span id="cart-count" class="badge badge-pill badge-danger">0</span>
 
 
         </div>

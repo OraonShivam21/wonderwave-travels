@@ -98,7 +98,7 @@ function showToast(message) {
 
   document.getElementById("toast-container").appendChild(toast);
 
-  $(toast).toast({ delay: 1000 }); // Adjust delay to 5 seconds (5000 milliseconds)
+  $(toast).toast({ delay: 5000 }); // Adjust delay to 5 seconds (5000 milliseconds)
   $(toast).toast("show");
 }
 
