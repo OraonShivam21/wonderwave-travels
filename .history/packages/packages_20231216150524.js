@@ -73,7 +73,6 @@ function addToCart(packageData) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart.push(packageData);
   localStorage.setItem("cart", JSON.stringify(cart));
-  updateCartCount();
 
   console.log("Adding to cart:", packageData);
   showToast("Added to cart!");
@@ -98,7 +97,7 @@ function showToast(message) {
 
   document.getElementById("toast-container").appendChild(toast);
 
-  $(toast).toast({ delay: 1000 }); // Adjust delay to 5 seconds (5000 milliseconds)
+  $(toast).toast({ delay: 5000 }); // Adjust delay to 5 seconds (5000 milliseconds)
   $(toast).toast("show");
 }
 
@@ -137,7 +136,6 @@ function setupPagination(totalItems, itemsPerPage) {
 document.addEventListener("DOMContentLoaded", function () {
   fetchPackages();
   createToastContainer();
-  updateCartCount();
 
   document
     .getElementById("apply-filters")
@@ -146,12 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
       displayPackages(1, filteredAndSortedPackages); // Reset to page 1 after filtering
     });
 });
-
-function updateCartCount() {
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const cartCountElement = document.getElementById("cart-count");
-  cartCountElement.textContent = cart.length;
-}
 
 function filterAndSortPackages() {
   const locationFilter = document
