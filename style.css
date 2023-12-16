@@ -91,6 +91,11 @@ nav {
     color: white;
   }
 
+  .sec-1-content>div>button:hover{
+    cursor: pointer;
+    transform: scale(1.12);
+  }
+
   /* SEC-1 END */
 
   .sec-2 {
@@ -160,6 +165,11 @@ nav {
     background-color:#fe8c56  ;
     color: white;
   }
+
+  .sec-2content>button:hover{
+    cursor: pointer;
+    transform: scale(1.12);
+  }
   
   /* Sec-3 start */
   
@@ -197,6 +207,11 @@ nav {
     margin-top: -20px;
     height: 40px;
     background-color: #7591fa;
+  }
+
+  .sec3card>button:hover{
+    cursor: pointer;
+    transform: scale(1.12);
   }
 
   .sec3card-container:hover {
@@ -264,6 +279,11 @@ nav {
     color: white;
   }
 
+  .sec-3-content>button:hover{
+    transform: scale(1.12);
+    cursor: pointer;
+  }
+
   .card-content{
     display: flex;
     margin-top: 120px;
@@ -279,6 +299,11 @@ nav {
     justify-content: center;
     align-items: center;
     height: 40px;
+  }
+
+  .card-butt:hover{
+    cursor: pointer;
+    transform: scale(1.12);
   }
 
   .empty {
@@ -328,6 +353,11 @@ nav {
     background-color: transparent;
   }
 
+  .hotelbutt:hover{
+    cursor: pointer;
+    transform: scale(1.12);
+  }
+
   .viewallbutt{
     height: 50px;
     margin-left: 30px;
@@ -335,6 +365,11 @@ nav {
     border-radius: 30px;
     background-color: #fe8c56;
     color: white;
+  }
+
+  .viewallbutt:hover{
+    cursor: pointer;
+    transform: scale(1.12);
   }
 
   .upperflex{
@@ -366,10 +401,12 @@ nav {
   .upper3{
     border: 2px solid;
     width: 580px;
-    height: 450px;
+    height: 470px;
     position: absolute;
     margin-left: 220px;
-    margin-top: -480px;
+    margin-top: -510px;
+    border-radius: 30px;
+    background-color: white;
   }
 
   .upper2-content{
@@ -523,20 +560,79 @@ nav {
     color: white;
   }
 
+  .search>button:hover{
+    cursor: pointer;
+    transform: scale(1.12);
+  }
+
   .sec7content>h1{
     font-size: 50px;
     margin-top: 100px;
   }
 
   
-  
-  hr{
-    color: white;
-    width: 500px;
-  }
+ 
   
   footer {
     background-color: #0f1a3c;
     width: 100%;
     height: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  .copyright{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright>span{
+      font-size: 20px;
+      padding-right: 5px;
+  }
+
+  .last{
+    color: white;
+    background-color: #0f1a3c;
+    display: flex;
+    text-align: center;
+    height: 70px;
+  }
+
+  .last>img{
+    width: 25px;
+    height: 25px;
+    margin-left: 100px;
+    background-color: white;
+    border-radius: 30px;
+  }
+
+  .upper3>img{
+    width: 90%;
+    height: 100%;
+    border-radius: 30px ;
+    margin-left: 5%; 
+  }
+
+  .sec5card>div>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .last>img:hover{
+    transform: scale(1.12);
+    cursor: pointer;
   }
