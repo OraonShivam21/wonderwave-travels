@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Cart Page - Every Sunday</title>
+
+    <style>
+        .cart-header {
+            background-color: #4B4491;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .cart-item-card {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-summary {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .cart-summary h4 {
+            color: #4B4491;
+        }
+
+        .remove-item-btn,
+        .clear-cart-btn,
+        .checkout-btn {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+        }
+
+        .remove-item-btn:hover,
+        .clear-cart-btn:hover,
+        .checkout-btn:hover {
+            background-color: #E64A19;
+        }
+
+        .cart-container {
+            margin-top: 30px;
+        }
+
+        .cart-total {
+            text-align: right;
+        }
+
+        .btn-group {
+            width: 100%;
+        }
+
+        .btn-group>button {
+            width: 49%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .btn-group>button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cart-header text-center">
+            <h2>Your Cart Items</h2>
+        </div>
+        <div id="cart-items" class="row">
+            <!-- Cart items will be loaded here dynamically -->
+        </div>
+        <div id="cart-summary" class="row justify-content-end mt-2">
+            <!-- Cart summary will be loaded here dynamically -->
+        </div>
+        <div class="row">
+            <div class="col text-right mt-2">
+                <button id="clear-cart" class="btn clear-cart-btn">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

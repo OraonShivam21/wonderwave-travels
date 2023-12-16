@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - Every Sunday</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .filter-sidebar {
+            margin-top: 20px;
+        }
+
+        .package-card {
+            margin-bottom: 20px;
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background: url('path_to_your_hero_image.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        /* Additional Styles */
+        /* ... (add any new styles here) ... */
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Hero Section -->
+        <div class="row">
+            <div class="col-12 hero-section">
+                <h1>Packages</h1>
+                <p>Explore the Best Travel Packages for Your Next Adventure</p>
+            </div>
+        </div>
+
+        <!-- Filters and Packages -->
+        <div class="row">
+            <!-- Sidebar for filtering and sorting -->
+            <div class="col-md-3">
+                <div class="filter-sidebar">
+                    <h2>Filter Packages</h2>
+                    <div class="filter-group">
+                        <label for="location-filter">Location</label>
+                        <div class="input-group">
+                            <input type="text" id="location-filter" class="form-control"
+                                placeholder="Type to filter...">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="duration-sort">Sort by Duration</label>
+                        <select id="duration-sort" class="form-control">
+                            <option value="default">Select</option>
+                            <option value="asc">Shortest to Longest</option>
+                            <option value="desc">Longest to Shortest</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-sort">Sort by Price</label>
+                        <select id="price-sort" class="form-control">
+                            <option value="default">Select</option>
+                            <option value="asc">Lowest to Highest</option>
+                            <option value="desc">Highest to Lowest</option>
+                        </select>
+                    </div>
+                    <button id="apply-filters" class="btn btn-primary mt-3">Apply Filters</button>
+                </div>
+            </div>
+
+            <!-- Main content area for packages -->
+            <div class="col-md-9">
+                <div class="row" id="packages-container">
+                    <!-- Packages will be inserted here -->
+                </div>
+
+                <!-- Pagination controls -->
+                <nav>
+                    <ul class="pagination justify-content-center" id="pagination-controls">
+                        <!-- Pagination buttons will be added here dynamically -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- ... (existing scripts) ... -->
+</body>
+
+</html>
