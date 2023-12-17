@@ -1,0 +1,94 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #9ccfec; */
+}
+
+.custom-navbar {
+  background-color: #0e8dd6;
+  color: #fff; /* Text color */
+}
+
+.custom-navbar a.nav-link,
+.custom-navbar .btn {
+  color: #fff !important; 
+}
+
+#container video{
+  width:300px;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 30px;
+  width: 100%; /* Set the width of the marquee */
+}
+
+/* Animation for the marquee effect */
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Style for each image container in the marquee */
+.marquee-container img {
+  width: 300px; 
+  margin-right: 20px; /* Adjust the spacing between images */
+  height: 200px; /* Set the height of the images */
+  display: inline-block;
+  animation: marquee 20s linear infinite; /* Adjust the duration of the animation */
+}
+
+
+
+footer {
+  background-color: #0e8dd6;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.social-icons a {
+  color: #fff;
+            margin-right: 15px;
+            font-size: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .nav-btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
