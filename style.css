@@ -654,7 +654,7 @@ nav {
     }
 
     .links a {
-      margin: 0 40px; 
+      margin: 0 30px; 
     }
   
 
@@ -771,21 +771,30 @@ nav {
     .seq4{
       margin-left: 0px;
     }
-    .sec5card1,
-    .sec5card2 {
-      width: 100%; /* Make cards full width in the fifth section */
-      margin-left: 0; /* Adjust margin for cards in the fifth section */
+    .sec5card1
+     {
+      width: 800px;
+      height: 400px;
+      margin-left: 0;
+       /* Make cards full width in the fifth section */
+       /* Adjust margin for cards in the fifth section */
+    }
+
+    .sec5card2{
+      width: 800px;
+      height: 500px;
+      margin-left: 0;
     }
   
     .sec7 {
       padding-top: px; /* Adjust padding for the seventh section */
     }
     .sec7content{
-      margin-left: 0px;
+      margin-left: 100px;
     }
   
     .search {
-      margin-left: 20px; /* Adjust margin for the search bar */
+      margin-left: 170px; /* Adjust margin for the search bar */
     }
   
     .footer a {
@@ -797,11 +806,11 @@ nav {
     
 
     .copyright{
-      margin-left: -50px;
+      margin-left: 0px;
       margin-top: 25px;
     }
 
-    .last>img{
+    .last>a{
       margin-left: -250px;
     }
   }
