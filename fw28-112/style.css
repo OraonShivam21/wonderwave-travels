@@ -78,7 +78,8 @@ div{
 
 .dropbtn {
     width: 100px;
-    padding: 10px;
+    padding: 8px;
+    margin-top: 2px;
     font-size: 14px;
     border: none;
     border-radius: 20px;
@@ -373,3 +374,14 @@ background-color: red;
   .add-button:hover {
     background-color: #45a049;
   }
+
+
+  /* home logo */
+  #home-logo {
+    width: 50px;
+    height: auto; 
+}
+
+#home-logo:hover{
+    transform: scale(1.1);
+}
