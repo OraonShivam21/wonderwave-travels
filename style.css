@@ -1,5 +1,5 @@
 nav {
-    background-color: #4465dd;
+    /* background-color: #4465dd; */
     padding: 15px;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@ nav {
   }
 
   nav a {
-    color: #fff;
+    color: #0f1a3c;
     text-decoration: none;
     font-size: 18px;
   }
@@ -39,7 +39,7 @@ nav {
     display: flex;
     height: 500px;
     width: 100%;
-    background-color: #4465dd;
+    /* background-color: #4465dd; */
   }
 
   .sec-1-img {
@@ -54,13 +54,20 @@ nav {
   }
 
   .sec-1-content {
-    margin-left: 100px;
-    width: 500px;
-    color: white;
+    margin-left: 90px;
+    width: 550px;
+    color: #0f1a3c;
+    background-color: #f8e7cd;
   }
 
   .sec-1-content>h1{
     font-size: 80px;
+    font-weight: bold;
+  }
+
+  .sec-1-content>p{
+    font-size: 20px;
+    margin-top: -20px;
   }
 
 
@@ -98,7 +105,7 @@ nav {
 
   .sec-2 {
     display: flex;
-    background-color: #193282;
+    background-color: #f8e7cd;
     justify-content: space-between;
     align-items: flex-start; /* Adjusted to align items at the start of the flex container */
     padding: 50px;
@@ -112,14 +119,14 @@ nav {
   .sec2card {
     flex: 1; /* Adjusted to make the cards take equal width */
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px #0f1a3c;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
     height: 250px;
     margin-top: 10px;
     text-align: center;
-    color: white;
+    color: #0f1a3c;
   }
   .sec2card:hover {
     transform: scale(1.12);
@@ -131,7 +138,7 @@ nav {
     padding: 20px;
     border-radius: 8px;
     width: 300px;
-    color: white;
+    color: #0f1a3c;
     }
 
   .sec-2content>div{
@@ -145,7 +152,7 @@ nav {
 
   .sec-2content>h2{
     font-size: 30px;
-    color: white;
+    color: #0f1a3c;
   }
 
   .sec-2content>button{
@@ -196,7 +203,7 @@ nav {
     margin-left: 400px;
     margin-top: 40px;
     height: 40px;
-    background-color: #7591fa;
+    background-color: goldenrod;
   }
 
   .sec3card>button:hover{
@@ -249,7 +256,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #0f1a3c;
     
   }
 
@@ -529,7 +536,7 @@ nav {
     width: 400px;
     height: 50px;
     border-radius: 30px;
-    margin-left: 500px;
+    margin-left: 520px;
   }
   
   .search>input{
@@ -659,9 +666,18 @@ nav {
   
 
     .links {
+      display: none;
+    }
+
+    .links2 {
       display: flex;
       align-items: center;      
       padding-left: 0px;
+      margin-left: 20px;
+    }
+
+    .links2>a{
+      margin-left: 30px;
     }
   
     .sec-1 {
@@ -754,7 +770,7 @@ nav {
     }
   
     .upper3 {
-      display: none
+      display: none;
       width: 200px; /* Make upper3 section full width */
       margin-left: 0; /* Adjust margin for upper3 section */
     }
@@ -806,12 +822,11 @@ nav {
     
 
     .copyright{
-      margin-left: 0px;
-      margin-top: 25px;
+      margin-left: 50px;
+      margin-top: 0px;
     }
 
     .last>a{
       margin-left: -250px;
     }
   }
-  
