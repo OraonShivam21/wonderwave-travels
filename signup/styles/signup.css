@@ -27,7 +27,10 @@ h2,p{
   font-size: 24px;
   cursor: pointer;
 }
-
+.nav-btn a{
+  text-decoration: none;
+  color:#fff;
+}
 .video-container {
   position: relative;
   width: 100%;
