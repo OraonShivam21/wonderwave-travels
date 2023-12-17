@@ -1,7 +1,6 @@
 nav {
     background-color: #4465dd;
     padding: 15px;
-    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -38,19 +37,17 @@ nav {
 
   .sec-1 {
     display: flex;
-    border: 2px solid;
     height: 500px;
+    width: 100%;
     background-color: #4465dd;
   }
 
   .sec-1-img {
-    border: 1px solid;
     margin-left: 200px;
   }
 
   .img-box {
     height: 400px;
-    border: 2px solid;
     width: 500px solid;
     margin-top: 50px;
     border-radius: 20px;
@@ -59,6 +56,7 @@ nav {
   .sec-1-content {
     margin-left: 100px;
     width: 500px;
+    color: white;
   }
 
   .sec-1-content>h1{
@@ -121,14 +119,8 @@ nav {
     height: 250px;
     margin-top: 10px;
     text-align: center;
+    color: white;
   }
-
-  .sec2card>img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
-
   .sec2card:hover {
     transform: scale(1.12);
   }
@@ -137,7 +129,6 @@ nav {
     margin-left: 30px;
     margin-top: -20px;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 8px;
     width: 300px;
     color: white;
@@ -147,7 +138,6 @@ nav {
     height: 50px;
     width: 50px;
     border-radius: 50px;
-    border: 2px solid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +194,7 @@ nav {
     align-items: center;
     width: 70px;
     margin-left: 400px;
-    margin-top: -20px;
+    margin-top: 40px;
     height: 40px;
     background-color: #7591fa;
   }
@@ -260,6 +250,7 @@ nav {
     justify-content: center;
     align-items: center;
     color: white;
+    
   }
 
   .butt{
@@ -286,7 +277,10 @@ nav {
 
   .card-content{
     display: flex;
-    margin-top: 120px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 20px;
+    color: white;
   }
 
   .card-butt{
@@ -322,12 +316,12 @@ nav {
   .upper{
     width: 80%;
     height: 500px;
-    border: 5px white;
     background-color: #7591fa;
     position: absolute;
     margin-left: 150px;
     margin-top: -250px;
     border-radius: 30px;
+    border: 10px green;
   }
 
   .seq3{
@@ -388,7 +382,6 @@ nav {
   }
 
   .upper2{
-    border: 2px solid;
     width: 1000px;
     height: 400px;
     position: absolute;
@@ -399,7 +392,6 @@ nav {
   }
 
   .upper3{
-    border: 2px solid;
     width: 580px;
     height: 470px;
     position: absolute;
@@ -428,8 +420,8 @@ nav {
     width: 10px;
     height: 10px;
     background-color: #193282;
-    margin-left: 4px;
-    margin-top:3px;
+    margin-left: 3.7px;
+    margin-top:3.5px;
   }
 
   .flex{
@@ -470,7 +462,6 @@ nav {
     background-color: #0f1a3c;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px ;
-    border: 3px solid;
   } 
 
   .seq4{
@@ -504,7 +495,6 @@ nav {
   .sec5card1{
     width: 600px;
     height: 600px;
-    border: 2px solid;
     margin-left: 100px;
     border-radius: 30px;
 
@@ -513,7 +503,6 @@ nav {
   .sec5card2{
     width: 600px;
     height: 700px;
-    border: 2px solid;
     margin-left: 100px;
     margin-top: -100px;
     border-radius: 30px;
@@ -523,12 +512,13 @@ nav {
     width: 100%;
     height: 500px;
     background-color:#0f1a3c ;
-    margin-top: -25px;
+    margin-top: -150px;
+    padding-top: 150px;
   }
 
   .sec7content{
-    width: 500px;
-    border: 2px solid;
+    width: 550px;
+    border: 2px #0f1a3c;
     margin-left: 450px;
     color: white;
     text-align: center;
@@ -636,3 +626,183 @@ nav {
     transform: scale(1.12);
     cursor: pointer;
   }
+
+  .Discount {
+    position: absolute;
+    top: 3050px;
+    left: 950px;
+    font-size: 300px;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    nav {
+      padding-left: 20px; /* Adjust padding for navigation links */
+
+    }
+
+    .logo {
+      margin-left: 0px;
+      height: 50px; 
+      width: auto; 
+      border-radius: 50%;
+    }
+
+    .links a {
+      margin: 0 40px; 
+    }
+  
+
+    .links {
+      display: flex;
+      align-items: center;      
+      padding-left: 0px;
+    }
+  
+    .sec-1 {
+      height: auto; /* Adjust height for the first section */
+      flex-direction: column; /* Change flex direction for smaller screens */
+      align-items: center; /* Center items vertically */
+    }
+  
+    .sec-1-content>div>button:hover{
+      cursor: pointer;
+      transform: scale(1.12);
+    }
+
+    .img-box {
+      width: 100%; /* Make the image box full width */
+      margin-left: -200px; /* Remove margin */
+    }
+  
+    .sec-1-content {
+      margin-left: 0; /* Adjust margin for content in the first section */
+      text-align: center; /* Center text in the first section */
+    }
+  
+    .sec-1-content > h1 {
+      font-size: 50px; /* Adjust font size for heading */
+    }
+  
+    .sec-2 {
+      flex-direction: column; /* Change flex direction for the second section */
+      padding: 20px; /* Adjust padding for the second section */
+    }
+  
+    .sec2card:hover {
+      transform: scale(1.12);
+    }
+
+    .sec2card-container {
+      flex-direction: column; /* Change flex direction for card container in the second section */
+    }
+  
+    .sec2card {
+      width: 100%; /* Make cards full width in the second section */
+     margin-left: 50px; /* Adjust margin for cards in the second section */
+    }
+  
+    .sec-2content {
+      margin-left: 150px;
+      margin-top: 50px; /* Adjust margin for content in the second section */
+    }
+  
+    .sec-3 {
+      display: flex;
+      padding: 20px; /* Adjust padding for the third section */
+    }
+  
+    .sec3card-container {
+      margin-left: 0;
+      width: 700px;
+    }
+  
+    .sec3card {
+      width: 450px; /* Make cards full width in the third section */
+      margin-left: 0; /* Adjust margin for cards in the third section */
+    }
+
+    .sec3card>button{
+      display: none;
+    }
+
+    .butt{
+        display: none;
+    }
+
+    .card-butt{
+      display: none;
+    }
+  
+    .sec-3-content {
+      margin-left: 0; /* Adjust margin for content in the third section */
+    }
+  
+    .upper {
+      margin-left: 20px; /* Adjust margin for the upper section */
+    }
+  
+    .upper2 {
+      display: flex;
+      width: 300px; /* Make upper2 section full width */
+      margin-left: 0; /* Adjust margin for upper2 section */
+    }
+  
+    .upper3 {
+      display: none
+      width: 200px; /* Make upper3 section full width */
+      margin-left: 0; /* Adjust margin for upper3 section */
+    }
+
+    .upper2-content{
+      display: none;
+    }
+  
+    .sec-5 {
+      height: auto; /* Adjust height for the fifth section */
+    }
+
+    
+    .seq4{
+      margin-left: 0px;
+    }
+    .sec5card1,
+    .sec5card2 {
+      width: 100%; /* Make cards full width in the fifth section */
+      margin-left: 0; /* Adjust margin for cards in the fifth section */
+    }
+  
+    .sec7 {
+      padding-top: px; /* Adjust padding for the seventh section */
+    }
+    .sec7content{
+      margin-left: 0px;
+    }
+  
+    .search {
+      margin-left: 20px; /* Adjust margin for the search bar */
+    }
+  
+    .footer a {
+      font-size: 14px; /* Adjust font size for footer links */
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+
+    
+
+    .copyright{
+      margin-left: -50px;
+      margin-top: 25px;
+    }
+
+    .last>img{
+      margin-left: -250px;
+    }
+  }
+  
