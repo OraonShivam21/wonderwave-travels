@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body, html {
   margin: 0;
   padding: 0;
@@ -15,9 +18,8 @@ body {
   'GRAD' 0,
   'opsz' 24
 }
-.nav-btn a{
-  text-decoration: none;
-  color:#fff;
+h2,p{
+  color:black;
 }
 #menu-icon {
   display: none; 
@@ -25,7 +27,10 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
-
+.nav-btn a{
+  text-decoration: none;
+  color:#fff;
+}
 .video-container {
   position: relative;
   width: 100%;
@@ -89,13 +94,13 @@ video {
 }
 .content {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 70%;
   transform: translate(-50%, -50%);
   color: white; 
   text-align: center;
   z-index: 2;
-  padding: 40px;
+  padding: 30px;
   height:auto;
   /* width:fit-content; */
   border-radius: 15px;
@@ -107,12 +112,12 @@ h2 {
 }
 
 form {
-  margin-top: 20px; 
+  margin-top: 0px; 
 }
 input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   box-sizing: border-box;
   border-radius: 10px;
   border: none;
@@ -148,6 +153,9 @@ input {
   .navigation {
     top: 20px;
     left: 90%;
+  }
+  h2,p{
+    color:white;
   }
   #menu-icon {
     display: block;
