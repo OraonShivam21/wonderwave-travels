@@ -16,7 +16,7 @@ The project was developed collaboratively by the following team members:
 
 - **Mohd Asif** -  fw28_307
 - **Mohd Khalid** -  fw28_112
-- **Rohit Yadav** -  fw28_
+- **Rohit Yadav** -  fw28_206
 - **Shivam Oraon** -  fw28_291
 - **Subhash Kumar** - fw25_246
 
