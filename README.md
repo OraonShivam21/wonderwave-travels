@@ -18,7 +18,7 @@ The project was developed collaboratively by the following team members:
 - **Mohd Khalid** -  fw28_112
 - **Rohit Yadav** -  fw28_206
 - **Shivam Oraon** -  fw28_291
-- **Subhash Kumar** - fw25_246
+- **Subhash Kumar** - fw27_246
 
 ## Live Demo
 Get the live demo of our deployed website through the link: [WonderWave Travels](https://thunderous-madeleine-37e5b8.netlify.app/)
