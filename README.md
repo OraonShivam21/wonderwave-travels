@@ -34,13 +34,13 @@ The WonderWave Travels website used these tech stacks as mentioned below for its
 
 ## Website Preview
 Here are some preview images of the website pages:
-**User Panel:**
+-**User Panel:**
 ![thunderous-madeleine-37e5b8 netlify app_login](https://github.com/OraonShivam21/quantum-script-1432/assets/138677528/61213e7e-62ea-457e-86f1-6337be5aaa58)
 ![thunderous-madeleine-37e5b8 netlify app_signup](https://github.com/OraonShivam21/quantum-script-1432/assets/138677528/07af6550-4789-45d0-a15c-008cfe6860df)
 ![thunderous-madeleine-37e5b8 netlify app_home](https://github.com/OraonShivam21/quantum-script-1432/assets/138677528/2fbcf00b-ed08-45f1-9e24-ec938cc31104)
 ![thunderous-madeleine-37e5b8 netlify app_packages](https://github.com/OraonShivam21/quantum-script-1432/assets/138677528/2353d681-67d6-4fa8-a854-ace0771fb7e3)
 
-**Admin Panel:**
+-**Admin Panel:**
 ![thunderous-madeleine-37e5b8 netlify app_admin_dashboard](https://github.com/OraonShivam21/quantum-script-1432/assets/138677528/1cb32541-1a28-4f0a-9242-d860f43ad84b)
 ![thunderous-madeleine-37e5b8 netlify app_admin_add-package](https://github.com/OraonShivam21/quantum-script-1432/assets/138677528/fcbe1ce4-d624-47af-82b3-09d7f83f4ad4)
 
