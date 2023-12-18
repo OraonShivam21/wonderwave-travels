@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Cart Page - Every Sunday</title>
+
+    <style>
+        .cart-header {
+            background-color: #4B4491;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .cart-item-card {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-summary {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 20px;
+            /* Adjust based on your header height */
+        }
+
+        .cart-summary h4 {
+            color: #4B4491;
+        }
+
+        .remove-item-btn {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+        }
+
+        .remove-item-btn:hover {
+            background-color: #E64A19;
+        }
+
+        .clear-cart-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .clear-cart-btn:hover {
+            background-color: #c82333;
+        }
+
+        .checkout-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .checkout-btn:hover {
+            background-color: #218838;
+        }
+
+        .sticky-header {
+            background-color: #4B4491;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('travel.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .filter-section,
+        .packages-content {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        .container-boxed {
+            width: 85%;
+            margin: auto;
+        }
+
+        .package-card {
+            margin-bottom: 20px;
+        }
+
+        .cart-icon {
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .sticky-header {
+            background-color: #4B4491;
+            /* deep blue/purple */
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        .hero-section {
+            background-color: #6D5BD0;
+            /* lighter purple */
+            color: #fff;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .filter-section,
+        .packages-content {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        .container-boxed {
+            width: 85%;
+            margin: auto;
+        }
+
+        .package-card {
+            background-color: #fff;
+            /* white background for cards */
+            border: none;
+            /* remove border */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* light shadow for depth */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* smooth transition for hover effects */
+            margin-bottom: 20px;
+            border-radius: 5px;
+            /* slightly rounded corners */
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            /* subtle lift effect on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            /* increased shadow on hover for depth */
+        }
+
+        .card-header {
+            background-color: #FFC107;
+            /* bright yellow for header */
+            color: #333;
+            /* dark text for contrast */
+            border-bottom: none;
+            /* remove border */
+        }
+
+        .card-img-top {
+            height: 200px;
+            /* fixed height for images */
+            object-fit: cover;
+            /* ensures images cover the area nicely */
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            color: #4B4491;
+            /* color theme for titles */
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background-color: #FF5722;
+            /* bright accent color */
+            border-color: #FF5722;
+        }
+
+        .btn-primary:hover {
+            background-color: #E64A19;
+            /* darker shade on hover */
+            border-color: #E64A19;
+        }
+
+        .cart-icon {
+            color: #FFC107;
+            /* matching bright yellow */
+            font-size: 1.5em;
+        }
+
+        .cart-container {
+            position: relative;
+            cursor: pointer;
+            /* Makes it obvious that it's clickable */
+        }
+
+        #cart-count {
+            position: absolute;
+            top: -10px;
+            /* Adjust as needed */
+            /* right: -10px; */
+            /* Adjust as needed */
+            background-color: red;
+            /* Or any color you prefer */
+            color: white;
+            padding: 2px 5px;
+            font-size: 0.75rem;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV BAR START -->
+    <div style="
+        background-image: url(https://img.freepik.com/premium-vector/summer-holidays-vector-illustrationflat-design-beach-with-car-surf_808505-2305.jpg?w=740);
+      ">
+        <nav>
+            <div>
+                <img class="logo" src="/images/WonderWave Travels Logo-1.png" alt="Logo" />
+            </div>
+            <div class="links">
+                <a href="/">HOME</a>
+                <a href="/packages/">PACKAGES</a>
+                <a href="/login/login.html">LOGIN</a>
+                <a href="/signup/signup.html">SIGN-UP</a>
+
+                <div class="cart-container">
+                    <a href="/cart"> <i class="fas fa-shopping-cart cart-icon"></i>
+                        <span id="cart-count" class="badge badge-pill badge-danger">0</span></a>
+
+
+
+
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- NAV BAR END -->
+
+
+
+        <!-- Sticky Header -->
+        <!-- <div class="sticky-header">
+        <div class="container-boxed d-flex justify-content-between align-items-center">
+            <h2>Every Sunday Travel</h2>
+            <div class="cart-container">
+                <a href="/cart"> <i class="fas fa-shopping-cart cart-icon"></i>
+                    <span id="cart-count" class="badge badge-pill badge-danger">0</span></a>
+
+
+
+
+            </div>
+
+
+        </div>
+    </div> -->
+
+        <div class="container-fluid">
+            <!-- Hero Section -->
+            <div class="row">
+                <div class="col-12 hero-section">
+                    <h1>Find Your Perfect Package
+                    </h1>
+
+                </div>
+            </div>
+
+
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- Cart Items Container -->
+                    <div class="col-lg-8">
+                        <div class="cart-header">
+                            <h2>Your Cart Items</h2>
+                        </div>
+                        <div id="cart-items">
+                            <!-- Cart items will be loaded here dynamically -->
+                        </div>
+                        <button id="clear-cart" class="btn clear-cart-btn btn-block">Clear Cart</button>
+                    </div>
+
+                    <!-- Cart Summary Container -->
+                    <div class="col-lg-4">
+                        <div id="cart-summary" class="cart-summary">
+                            <!-- Cart summary will be loaded here dynamically -->
+                        </div>
+                        <a href="https://www.sandbox.paypal.com/signin"><button
+                                class="btn checkout-btn btn-block">Checkout</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script src="cart.js"></script>
+</body>
+
+</html>
