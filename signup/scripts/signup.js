@@ -77,7 +77,7 @@ async function signUp() {
   } else {
     try {
 
-      const response = await fetch('https://mock-server-6twd.onrender.com/users', {
+      const response = await fetch('https://wonderwave-api.onrender.com/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -93,8 +93,8 @@ async function signUp() {
       if (!response.ok) {
         throw new Error('Failed to add user');
       }
-
       showSuccess('User added successfully!');
+      window.location.replace("../../login/login.html");
     } catch (error) {
       console.error('Error:', error);
       showError('Failed to add user. Please try again later.');
