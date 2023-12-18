@@ -1,338 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=DIV, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=DIV, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+        margin: 0px;
+      }
 
-  <style>
-    body {
-      margin: 0px;
-    }
+      .cart-icon {
+        color: #ffc107;
+        /* matching bright yellow */
+        font-size: 1.5em;
+      }
 
-    .cart-icon {
-      color: #FFC107;
-      /* matching bright yellow */
-      font-size: 1.5em;
-    }
+      .cart-container {
+        position: relative;
+        cursor: pointer;
+        /* Makes it obvious that it's clickable */
+      }
 
-    .cart-container {
-      position: relative;
-      cursor: pointer;
-      /* Makes it obvious that it's clickable */
-    }
+      #cart-count {
+        position: absolute;
+        top: -10px;
+        /* Adjust as needed */
+        /* right: -10px; */
+        /* Adjust as needed */
+        background-color: red;
+        /* Or any color you prefer */
+        color: white;
+        padding: 2px 5px;
+        font-size: 0.75rem;
+        border-radius: 50%;
+      }
+    </style>
+    <title>Document</title>
+  </head>
 
-    #cart-count {
-      position: absolute;
-      top: -10px;
-      /* Adjust as needed */
-      /* right: -10px; */
-      /* Adjust as needed */
-      background-color: red;
-      /* Or any color you prefer */
-      color: white;
-      padding: 2px 5px;
-      font-size: 0.75rem;
-      border-radius: 50%;
-    }
-  </style>
-  <title>WonderWave Travels</title>
-</head>
-
-<body>
-  <!-- NAV BAR START -->
-  <div style="
- background-image: url(https://img.freepik.com/premium-vector/summer-holidays-vector-illustrationflat-design-beach-with-car-surf_808505-2305.jpg?w=740);
-">
-    <nav>
-      <div>
-        <img class="logo" src="/images/WonderWave Travels Logo-1.png" alt="Logo" />
-      </div>
-      <div class="links">
-        <a href="/">HOME</a>
-        <a href="/packages/">PACKAGES</a>
-        <a href="/login/login.html">LOGIN</a>
-        <a href="/signup/signup.html">SIGN-UP</a>
-
-        <div class="cart-container">
-          <a href="/cart"> <i class="fas fa-shopping-cart cart-icon"></i>
-            <span id="cart-count" class="badge badge-pill badge-danger">0</span></a>
-
-
-
-
-        </div>
-
-      </div>
-    </nav>
-
-    <!-- NAV BAR END -->
-
-    <!-- SEC-1 START -->
-
-    <div class="sec-1">
-      <div class="sec-1-content">
-        <h1>WonderWave Travels!</h1>
-        <p>
-          WonderWave Travels offers you the best Indian Tour packages with exciting deals and offers.
-        </p>
+  <body>
+    <!-- NAV BAR START -->
+    <div
+      style="
+        background-image: url(https://img.freepik.com/premium-vector/summer-holidays-vector-illustrationflat-design-beach-with-car-surf_808505-2305.jpg?w=740);
+      "
+    >
+      <nav>
         <div>
-          <input type="text" />
-          <button>Search</button>
+          <img
+            class="logo"
+            src="images/WonderWave Travels Logo-1.png"
+            alt="Logo"
+          />
         </div>
-      </div>
-      <div>
-        <div class="sec-1-img">
-          <div class="img-box">
-            <!-- <img
+        <div class="links">
+          <a href="/">HOME</a>
+          <a href="/packages/">PACKAGES</a>
+          <a href="/login/login.html">LOGIN</a>
+          <a href="/signup/signup.html">SIGN-UP</a>
+
+          <div class="cart-container">
+            <a href="/cart">
+              <i class="fas fa-shopping-cart cart-icon"></i>
+              <span id="cart-count" class="badge badge-pill badge-danger"
+                >0</span
+              ></a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- NAV BAR END -->
+
+      <!-- SEC-1 START -->
+
+      <div class="sec-1">
+        <div class="sec-1-content">
+          <h1>SUMMER TRIP!</h1>
+          <p>
+            Every Sunday is a service for booking hotels, air tickets and other
+            travel services for professionals
+          </p>
+          <div>
+            <input type="text" />
+            <button>Search</button>
+          </div>
+        </div>
+        <div>
+          <div class="sec-1-img">
+            <div class="img-box">
+              <!-- <img
                 style="height: 400px; width: 500px; border-radius: 20px"
                 src="images/photo-1529074963764-98f45c47344b.avif"
                 alt=""
               /> -->
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- SEC-1 END -->
+    <!-- SEC-1 END -->
 
-  <!-- SEC-2 START -->
-  <div class="sec-2">
-    <div class="sec2card-container">
-      <div class="sec2card">
-        <img style="width: 80px; height: 80px; margin-top: 30px" src="images/map.png" alt="choice" />
-        <h2>Lot of Choices</h2>
-        <p>Amazing places? We will give you the best choice!</p>
+    <!-- SEC-2 START -->
+    <div class="sec-2">
+      <div class="sec2card-container">
+        <div class="sec2card">
+          <img
+            style="width: 80px; height: 80px; margin-top: 30px"
+            src="images/map.png"
+            alt="choice"
+          />
+          <h2>Lot of Choices</h2>
+          <p>Amazing places? We will give you the best choice!</p>
+        </div>
+
+        <div class="sec2card">
+          <img
+            style="width: 130px; height: 90px; margin-top: 30px"
+            src="images/EASY BOOKING.png"
+            alt="easy booking"
+          />
+          <h2>Easy Booking</h2>
+          <p>Payment is simple, and you'll get your quickly!</p>
+        </div>
+
+        <div class="sec2card">
+          <img
+            style="width: 100px; height: 90px; margin-top: 30px"
+            src="images/tour goude.png"
+            alt="tour guide"
+          />
+          <h2>Best to Guide</h2>
+          <p>Our guide team will make your trip as comfortable as possible!</p>
+        </div>
       </div>
 
-      <div class="sec2card">
-        <img style="width: 130px; height: 90px; margin-top: 30px" src="images/EASY BOOKING.png" alt="easy booking" />
-        <h2>Easy Booking</h2>
-        <p>Payment is simple, and you'll get your quickly!</p>
-      </div>
-
-      <div class="sec2card">
-        <img style="width: 100px; height: 90px; margin-top: 30px" src="images/tour goude.png" alt="tour guide" />
-        <h2>Best to Guide</h2>
-        <p>Our guide team will make your trip as comfortable as possible!</p>
-      </div>
-    </div>
-
-    <div class="sec-2content">
-      <div class="seq">01</div>
-      <h2>OUR SERVICES</h2>
-      <p>
-        Every Sunday is a service for booking hotels, air tickets and other
-        travel services for professional
-      </p>
-      <button>Learn More</button>
-    </div>
-  </div>
-
-  <!-- Sec-2 END -->
-
-  <!-- SEC-3 START -->
-  <div class="sec-3">
-    <div class="sec-3-content">
-      <div class="seq">02</div>
-      <h2>SPECIAL PACKAGE</h2>
-
-      <p style="color: white">
-        Every Sunday is a service for booking hotels, air tickets and other
-        travel services for professional
-      </p>
-      <button>Learn More</button>
-      <br /><br /><br />
-      <div class="butt">
-        <button class="nav-button" onclick="showPreviousCard()">
-          <span class="material-symbols-outlined"> arrow_back </span>
-        </button>
-        <button class="next-button" onclick="showNextCard()">
-          <span class="material-symbols-outlined"> arrow_forward </span>
-        </button>
+      <div class="sec-2content">
+        <div class="seq">01</div>
+        <h2>OUR SERVICES</h2>
+        <p>
+          Every Sunday is a service for booking hotels, air tickets and other
+          travel services for professional
+        </p>
+        <button>Learn More</button>
       </div>
     </div>
 
-    <div class="sec3card-container" id="card-container">
-      <!-- Card 1 -->
-      <div class="sec3card" style="
+    <!-- Sec-2 END -->
+
+    <!-- SEC-3 START -->
+    <div class="sec-3">
+      <div class="sec-3-content">
+        <div class="seq1">02</div>
+        <h2>SPECIAL PACKAGE</h2>
+
+        <p style="color: white">
+          Every Sunday is a service for booking hotels, air tickets and other
+          travel services for professional
+        </p>
+        <button>Learn More</button>
+        <br /><br /><br />
+        <div class="butt">
+          <button class="nav-button" onclick="showPreviousCard()">
+            <span class="material-symbols-outlined"> arrow_back </span>
+          </button>
+          <button class="next-button" onclick="showNextCard()">
+            <span class="material-symbols-outlined"> arrow_forward </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="sec3card-container" id="card-container">
+        <!-- Card 1 -->
+        <div
+          class="sec3card"
+          style="
             background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/venice-grand-canal-at-night-italy-nicolo-miana.jpg);
             background-size: cover;
             background-position: center center;
-          ">
-        <button>
-          <span class="material-symbols-outlined"> star </span>
-          <span>4.7</span>
-        </button>
-        <div class="card-content">
-          <div>
-            <h2>The Grand Canal</h2>
-            <p>Venice, Northeastern Italy</p>
-          </div>
-          <div>
-            <button class="card-butt">
-              Book Now
-              <span class="material-symbols-outlined"> arrow_forward </span>
-            </button>
+          "
+        >
+          <button>
+            <span class="material-symbols-outlined"> star </span>
+            <span>4.7</span>
+          </button>
+          <div class="card-content">
+            <div>
+              <h2>The Grand Canal</h2>
+              <p>Venice, Northeastern Italy</p>
+            </div>
+            <div>
+              <button class="card-butt">
+                Book Now
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="sec3card" style="
+        <!-- Card 2 -->
+        <div
+          class="sec3card"
+          style="
             display: none;
             background-image: url(https://hips.hearstapps.com/hmg-prod/images/red-hot-air-balloons-over-jungle-nyaung-u-mandalay-royalty-free-image-1693419727.jpg?crop=0.681xw:1.00xh;0.272xw,0&resize=640:*);
             background-size: cover;
             background-position: center center;
-          ">
-        <button>
-          <span class="material-symbols-outlined"> star </span>
-          <span>4.5</span>
-        </button>
-        <div class="card-content">
-          <div>
-            <h2>Ballon Tour</h2>
-            <p>Cappadocia, Turkey</p>
-          </div>
-          <div>
-            <button class="card-butt">
-              Book Now
-              <span class="material-symbols-outlined"> arrow_forward </span>
-            </button>
+          "
+        >
+          <button>
+            <span class="material-symbols-outlined"> star </span>
+            <span>4.5</span>
+          </button>
+          <div class="card-content">
+            <div>
+              <h2>Ballon Tour</h2>
+              <p>Cappadocia, Turkey</p>
+            </div>
+            <div>
+              <button class="card-butt">
+                Book Now
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Card 3 -->
-      <div class="sec3card" style="
+        <!-- Card 3 -->
+        <div
+          class="sec3card"
+          style="
             display: none;
             background-image: url(https://cityfurnish.com/blog/wp-content/uploads/2023/08/beach-near-hotel-min.jpg);
             background-size: cover;
             background-position: center center;
-          ">
-        <button>
-          <span class="material-symbols-outlined"> star </span>
-          <span>4.8</span>
-        </button>
-        <div class="card-content">
-          <div>
-            <h2>Place at beach</h2>
-            <p>Mumbai, India</p>
+          "
+        >
+          <button>
+            <span class="material-symbols-outlined"> star </span>
+            <span>4.8</span>
+          </button>
+          <div class="card-content">
+            <div>
+              <h2>Place at beach</h2>
+              <p>Mumbai, India</p>
+            </div>
+            <div>
+              <button class="card-butt">
+                Book Now
+                <span class="material-symbols-outlined"> arrow_forward </span>
+              </button>
+            </div>
           </div>
-          <div>
-            <button class="card-butt">
-              Book Now
-              <span class="material-symbols-outlined"> arrow_forward </span>
-            </button>
+        </div>
+      </div>
+    </div>
+    <!-- SEC-3 END -->
+
+    <!-- Sec-4 Start -->
+    <div class="empty"></div>
+    <div class="sec-4">
+      <div class="upper">
+        <div class="upperflex">
+          <div class="seq3">03</div>
+          <h2>FULL FEATURED ON WITH MORE THAN 200.000 USERS</h2>
+        </div>
+        <button class="hotelbutt">Hotel</button>
+        <button class="viewallbutt">View All</button>
+      </div>
+    </div>
+    <div class="back"></div>
+    <div class="upper2">
+      <div class="upper2-content">
+        <p>Exclusive</p>
+        <h2>$1099/pack</h2>
+        <div class="flex">
+          <div class="circleline">
+            <div class="tick"></div>
           </div>
+          <div class="write">President suite room</div>
+        </div>
+        <div class="flex">
+          <div class="circleline">
+            <div class="tick"></div>
+          </div>
+          <div class="write">Free breakfast and lunch</div>
+        </div>
+        <div class="flex">
+          <div class="circleline">
+            <div class="tick"></div>
+          </div>
+          <div class="write">Free pick up</div>
+        </div>
+        <button class="button">Book now</button>
+      </div>
+    </div>
+    <div class="upper3">
+      <img src="images/car.png" alt="" />
+    </div>
+
+    <!-- SEC-5 START -->
+    <div class="sec-5">
+      <div class="sec5content">
+        <div class="seq4">04</div>
+        <h2>ARTICLES</h2>
+      </div>
+      <div class="sec5card">
+        <div class="sec5card1"><img src="images/baloon.png" alt="" /></div>
+        <div class="sec5card2">
+          <img src="images/Discount.png" alt="" />
+          <div class="Discount">What? Discount of 50%?</div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- SEC-3 END -->
 
-  <!-- Sec-4 Start -->
-  <div class="empty"></div>
-  <div class="sec-4">
-    <div class="upper">
-      <div class="upperflex">
-        <div class="seq3">03</div>
-        <h2>FULL FEATURED ON WITH MORE THAN 200.000 USERS</h2>
+    <!-- SEC 6 START -->
+    <div class="sec7">
+      <div class="sec7content">
+        <h1>GET STARTED AND EARLY UPDATE ABOUT OUR PACKAGE</h1>
       </div>
-      <button class="hotelbutt">Hotel</button>
-      <button class="viewallbutt">View All</button>
-    </div>
-  </div>
-  <div class="back"></div>
-  <div class="upper2">
-    <div class="upper2-content">
-      <p>Exclusive</p>
-      <h2>$1099/pack</h2>
-      <div class="flex">
-        <div class="circleline">
-          <div class="tick"></div>
-        </div>
-        <div class="write">President suite room</div>
-      </div>
-      <div class="flex">
-        <div class="circleline">
-          <div class="tick"></div>
-        </div>
-        <div class="write">Free breakfast and lunch</div>
-      </div>
-      <div class="flex">
-        <div class="circleline">
-          <div class="tick"></div>
-        </div>
-        <div class="write">Free pick up</div>
-      </div>
-      <button class="button">Book now</button>
-    </div>
-  </div>
-  <div class="upper3">
-    <img src="images/car.png" alt="" />
-  </div>
 
-  <!-- SEC-5 START -->
-  <div class="sec-5">
-    <div class="sec5content">
-      <div class="seq4">04</div>
-      <h2>ARTICLES</h2>
-    </div>
-    <div class="sec5card">
-      <div class="sec5card1"><img src="images/baloon.png" alt="" /></div>
-      <div class="sec5card2">
-        <img src="images/Discount.png" alt="" />
-        <div class="Discount">What? Discount of 50%?</div>
+      <div class="search">
+        <input type="text" />
+        <button>Search</button>
       </div>
     </div>
-  </div>
-
-  <!-- SEC 6 START -->
-  <div class="sec7">
-    <div class="sec7content">
-      <h1>GET STARTED AND EARLY UPDATE ABOUT OUR PACKAGE</h1>
+    <footer>
+      <div>
+        <img
+          class="logo"
+          src="images/WonderWave Travels Logo-1.png"
+          alt="Logo"
+        />
+      </div>
+      <div class="links">
+        <a href="#">HOME</a>
+        <a href="#">DESTINATION</a>
+        <a href="#">FEEDBACK</a>
+        <a href="#">PRICING</a>
+      </div>
+      <div class="copyright">
+        <span class="material-symbols-outlined"> copyright </span> 2023 Every
+        Sunday
+      </div>
+    </footer>
+    <div class="last">
+      <a href="https://www.facebook.com/your-facebook-page" target="_blank">
+        <img
+          style="margin-left: 700px"
+          src="images/facebook.png"
+          alt="Facebook"
+        />
+      </a>
+      <a href="https://www.instagram.com/your-instagram-page" target="_blank">
+        <img src="images/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://twitter.com/your-twitter-page" target="_blank">
+        <img src="images/twitter.png" alt="Twitter" />
+      </a>
     </div>
-
-    <div class="search">
-      <input type="text" />
-      <button>Search</button>
-    </div>
-  </div>
-  <footer>
-    <div>
-      <img class="logo" src="images/WonderWave Travels Logo-1.png" alt="Logo" />
-    </div>
-    <div class="links">
-      <a href="#">HOME</a>
-      <a href="#">DESTINATION</a>
-      <a href="#">FEEDBACK</a>
-      <a href="#">PRICING</a>
-    </div>
-    <div class="copyright">
-      <span class="material-symbols-outlined"> copyright </span> 2023 Every
-      Sunday
-    </div>
-  </footer>
-  <div class="last">
-    <a href="https://www.facebook.com/your-facebook-page" target="_blank">
-      <img style="margin-left: 700px" src="images/facebook.png" alt="Facebook" />
-    </a>
-    <a href="https://www.instagram.com/your-instagram-page" target="_blank">
-      <img src="images/instagram.png" alt="Instagram" />
-    </a>
-    <a href="https://twitter.com/your-twitter-page" target="_blank">
-      <img src="images/twitter.png" alt="Twitter" />
-    </a>
-  </div>
-  <script src="index.js"></script>
-  <script src="/packages/packages.js"></script>
-</body>
-
+    <script src="index.js"></script>
+    <script src="/packages/packages.js"></script>
+  </body>
 </html>

@@ -260,6 +260,18 @@ nav {
     
   }
 
+  .seq1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+
   .butt{
     display: flex;
   }
@@ -766,13 +778,12 @@ nav {
     .upper2 {
       display: flex;
       width: 300px; /* Make upper2 section full width */
-      margin-left: 0; /* Adjust margin for upper2 section */
+      margin-left: 0;
+      display: none; /* Adjust margin for upper2 section */
     }
   
     .upper3 {
-      display: none;
-      width: 200px; /* Make upper3 section full width */
-      margin-left: 0; /* Adjust margin for upper3 section */
+      display: none; /* Adjust margin for upper3 section */
     }
 
     .upper2-content{
