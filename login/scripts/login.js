@@ -30,6 +30,10 @@ async function authenticateUser(usernameOrEmail, password) {
 
     if (user) {
       showSuccess('Login successful!');
+      if(user.role === "admin")
+        window.location.replace("../../admin/admin-packages/index.html");
+      else if(user.role === "user")
+        window.location.replace("../../index.html");
     } else {
       showError('Invalid username or email or password');
     }

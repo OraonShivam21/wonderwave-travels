@@ -56,11 +56,14 @@ function getCard(data)
 
     let description=document.createElement('div');
     description.className="card-description";
-    description.textContent=data.description;
+    description.textContent=`${data.description}.`;
+
+    let dura_price=document.createElement('div')
+    dura_price.className="duration-price";
 
     let duration=document.createElement('div');
     duration.className="card-duration";
-    duration.textContent=data.duration;
+    duration.textContent=`duration- ${data.duration} days`;
 
     let destination=document.createElement('div');
     destination.className="card-destination";
@@ -70,11 +73,35 @@ function getCard(data)
     price.className="card-price";
     price.textContent=`${data.price} ${data.currency}`;
 
+
+    //
+    let edit_buttons_container=document.createElement('div');
+    edit_buttons_container.className="edit-buttons-container";
+
+    let delete_button=document.createElement('button');
+    delete_button.className="delete-button";
+    delete_button.textContent="delete";
+    delete_button.addEventListener('click',(e)=>{
+        e.preventDefault();
+         deleteCard(data);
+    })
+    let edit_button=document.createElement('button');
+    edit_button.className="edit-button";
+    edit_button.textContent="edit";
+    edit_button.addEventListener('click',(e)=>{
+        e.preventDefault();
+        editCard(data);
+    })
+
+    edit_buttons_container.append(delete_button);
+    edit_buttons_container.append(edit_button);
     cardbody.append(title);
     cardbody.append(description);
     cardbody.append(destination);
-    cardbody.append(duration);
-    cardbody.append(price);
+    dura_price.append(duration);
+    dura_price.append(price);
+    cardbody.append(dura_price);
+    cardbody.append(edit_buttons_container);
     card.append(cardbody);
     return card;
 }
@@ -141,5 +168,42 @@ document.getElementById('sort-high-to-low').addEventListener('click', function (
     sortAndRender(allData);
 });
 
+
+//edit card
+
+let editCard=async (packagedata)=>
+{
+    let durations=document.getElementById("edit-duration");
+    let prices=document.getElementById("edit-price");
+    durations.value=packagedata.duration;
+    prices.value=packagedata.price;
+    let save=document.querySelector(".save-button");
+    save.addEventListener('click',async()=>{
+        let res=await fetch(`${'https://wonderwave-api.onrender.com/packages'}/${packagedata.id}`,{
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify({
+                duration: durations.value,
+                price: prices.value
+            })
+        })
+        let data=await res.json();
+        alert('data updated successfully');
+        fetchdata(`https://wonderwave-api.onrender.com/packages`);
+    })
+}
+
+// delete card
+
+let deleteCard=async (packagedata)=>{
+    let res=await fetch(`${'https://wonderwave-api.onrender.com/packages'}/${packagedata.id}`,{
+        method: 'DELETE'
+    })
+    let data=await res.json();
+    alert('package deleted successfully');
+    fetchdata(`https://wonderwave-api.onrender.com/packages`);
+}
 
 fetchdata(`https://wonderwave-api.onrender.com/packages`);
