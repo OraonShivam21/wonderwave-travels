@@ -3,20 +3,13 @@ const itemsPerPage = 6;
 let currentPage = 1;
 
 function fetchPackages() {
-  const loadingContainer = document.getElementById("loading-container");
-  loadingContainer.style.display = "block"; // Display the loading container
-
   fetch("https://wonderwave-api.onrender.com/packages")
     .then((response) => response.json())
     .then((data) => {
       allPackages = data;
       displayPackages(currentPage);
-      loadingContainer.style.display = "none"; // Hide the loading container after data is loaded
     })
-    .catch((error) => {
-      console.error("Error fetching packages:", error);
-      loadingContainer.style.display = "none"; // Hide the loading container on error
-    });
+    .catch((error) => console.error("Error fetching packages:", error));
 }
 
 function displayPackages(page, packages = allPackages) {
