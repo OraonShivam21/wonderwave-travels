@@ -21,7 +21,7 @@ The project was developed collaboratively by the following team members:
 - **Subhash Kumar** - fw27_246
 
 ## Live Demo
-Get the live demo of our deployed website through the link: [WonderWave Travels](https://rainbow-elf-25c938.netlify.app/)
+Get the live demo of our deployed website through the link: [WonderWave Travels](https://tangerine-taffy-c13797.netlify.app/)
 
 ## Tech Stack
 The WonderWave Travels website used these tech stacks as mentioned below for its creation:
